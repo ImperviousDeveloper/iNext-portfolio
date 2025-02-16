@@ -1,5 +1,71 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+
+- Gh-Pages setup
+
+- ✅ 1. Update next.config.js
+````
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export', // Needed for next export
+  images: {
+    unoptimized: true, // Optional: if using images (next/image), because GitHub Pages doesn't support optimized images
+  },
+  basePath: '/<REPO_NAME>',
+  assetPrefix: '/<REPO_NAME>/',
+};
+
+module.exports = nextConfig;
+````
+
+- ✅ 2. Add homepage to package.json
+````
+{
+  "homepage": "https://<USERNAME>.github.io/<REPO_NAME>"
+}
+````
+
+- ✅ 3. Install gh-pages
+````
+npm install gh-pages --save-dev
+````
+
+- ✅ 4. Add Deployment Scripts in package.json
+````
+// for next < 14
+{
+  "scripts": {
+    "build": "next build",
+    "export": "next export",
+    "deploy": "npm run build && npm run export && gh-pages -d out"
+  }
+}
+
+// for next 14+
+{
+  "scripts": {
+    "build": "next build",
+    "deploy": "next build && gh-pages -d out"
+  }
+}
+````
+
+- ✅ 5. Build and Deploy
+
+````
+// V1
+npm run deploy
+
+// V2
+// Build and Export:
+npm run build
+npx next export
+
+// Deploy:
+npx gh-pages -d out
+````
+
+
 ## Getting Started
 
 First, run the development server:
