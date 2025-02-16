@@ -35,7 +35,8 @@ import {default as flattenColorPalette} from "tailwindcss/lib/util/flattenColorP
 // import flattenColorPalette from 'tailwindcss/lib/util/flattenColorPalette';
 
 const config = {
-  darkMode: ["class"],
+  // darkMode: ["class"],
+  darkMode: 'class', // important!
   content: [
     "./pages/**/*.{ts,tsx,js,jsx, mdx}",
     "./components/**/*.{ts,tsx,js,jsx, mdx}",
