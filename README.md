@@ -1,6 +1,11 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 
+- To clean cache
+````
+npx react-native-clean-project
+````
+
 - Gh-Pages setup
 
 - ✅ 1. Update next.config.js

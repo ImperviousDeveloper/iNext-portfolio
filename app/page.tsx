@@ -5,6 +5,7 @@ import Grid from "@/components/Grid";
 import RecentProjects from "@/components/RecentProjects";
 import Clients from "@/components/Clients";
 import Experience from "@/components/Experience";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
           <Clients/>
           <Experience/>
           {/*<Approach/>*/}
-          {/*<Footer/>*/}
+          <Footer/>
         </div>
       </main>
   );

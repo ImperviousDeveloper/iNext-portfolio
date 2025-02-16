@@ -11,10 +11,9 @@
   },
   "dependencies": {
     "@eslint/js": "^9.20.0",
-    "@react-three/drei": "^9.114.3",
-    "@react-three/fiber": "^8.17.9",
+    "@react-three/drei": "^9.121.5",
+    "@react-three/fiber": "^8.17.14",
     "@tailwindcss/postcss": "^4.0.6",
-    "three": "^0.169.0",
     "autoprefixer": "^10.4.20",
     "clsx": "^2.1.1",
     "eslint-plugin-react": "^7.37.4",
@@ -32,6 +31,7 @@
     "tailwind-colors": "^1.1.0",
     "tailwind-merge": "^3.0.1",
     "tailwindcss-animate": "^1.0.7",
+    "three": "^0.169.0",
     "three-globe": "^2.41.12",
     "typescript-eslint": "^8.24.0"
   },
