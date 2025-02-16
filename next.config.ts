@@ -15,7 +15,7 @@ const nextConfig: NextConfig = {
         unoptimized: true, // Optional: if using images (next/image), because GitHub Pages doesn't support optimized images
     },
     // assetPrefix: '/iNext-portfolio',
-    assetPrefix: isProd ? '/your-repo-name/' : '',
+    assetPrefix: isProd ? '/inext-portfolio/' : '',
 };
 
 export default nextConfig;
