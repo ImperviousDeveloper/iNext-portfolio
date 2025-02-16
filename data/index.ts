@@ -74,11 +74,11 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    title: "URL Shortner",
+    des: "Simplify your links with this fast and intuitive URL shortener. Quickly generate short, shareable URLs with custom aliases and track their performance—all through a clean, modern interface.",
     img: `${BASE_PATH}/p1.svg`,
     iconLists: [`${BASE_PATH}/re.svg`, `${BASE_PATH}/tail.svg`, `${BASE_PATH}/ts.svg`, `${BASE_PATH}/three.svg`, `${BASE_PATH}/fm.svg`],
-    link: "/ui.earth.com",
+    link: "https://imperviousdeveloper.github.io/about",
   },
   {
     id: 2,
