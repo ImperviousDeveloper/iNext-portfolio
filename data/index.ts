@@ -208,17 +208,17 @@ export const workExperience = [
 export const socialMedia = [
   {
     id: 1,
-    img: "/git.svg",
+    img: `${BASE_PATH}/git.svg`,
     link: "https://github.com/SharmaRajan/"
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: `${BASE_PATH}/twit.svg`,
     link: "https://x.com/RajanS5259"
   },
   {
     id: 3,
-    img: "/link.svg",
+    img: `${BASE_PATH}/link.svg`,
     link: "https://www.linkedin.com/in/rajan-kumar-sharma-709a17229/"
   },
 ];
