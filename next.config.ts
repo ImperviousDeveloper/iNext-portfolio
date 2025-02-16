@@ -5,8 +5,8 @@ const isProd = process.env.NODE_ENV === 'production';
 const nextConfig: NextConfig = {
   /* config options here */
     basePath: isProd ? "/inext-portfolio" : '',
-    // output: 'export',
-    output: 'standalone', // Optional if you may move to hosting platforms later
+    output: 'export',
+    // output: 'standalone', // Optional if you may move to hosting platforms later
     // reactStrictMode: true,
     typescript :{
         ignoreBuildErrors : true,
@@ -16,6 +16,7 @@ const nextConfig: NextConfig = {
     },
     // assetPrefix: '/iNext-portfolio',
     assetPrefix: isProd ? '/inext-portfolio/' : '',
+    trailingSlash: true, // Optional, improves routing on GH Pages
 };
 
 export default nextConfig;
